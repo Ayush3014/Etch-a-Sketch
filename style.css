@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: consolas;
+}
+
+.sketch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;       /* full height of viewport */
+}
+
+.container {
+    /* flex: 1; */
+    display: grid;
+    /* height: 500px;
+    width: 500px; */
+    background-color: black;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-rows: repeat(4, 1fr); */
+    
+}
+
+.item {
+    height: 50px;
+    width: 50px;
+    background-color: aliceblue;
+    border: 2px solid crimson;
+}
