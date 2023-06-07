@@ -3,6 +3,7 @@ const reset = document.querySelector('.reset');
 const black = document.getElementById('black');
 const random = document.getElementById('random');
 const selected = document.getElementById('dropdown');
+const colorPicker = document.getElementById('colorPicker');  
 
 item.forEach(element => {
     element.addEventListener('mouseenter', ()=>{
@@ -17,6 +18,7 @@ reset.addEventListener('click', () => {
 });
 
 selected.addEventListener("change", () => {
+
     if(selected.value === black.value)
     {
         item.forEach(element => {
@@ -40,3 +42,10 @@ selected.addEventListener("change", () => {
     }
 });
 
+colorPicker.addEventListener('input', () => {
+    item.forEach(element => {
+        element.addEventListener('mouseenter', () => {
+            element.style.backgroundColor = colorPicker.value;
+        });
+    });
+}); 
