@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
 
 body {
@@ -35,8 +35,8 @@ body {
 .item {
     height: 50px;
     width: 50px;
-    background-color: aliceblue;
-    border: 2px solid crimson;
+    background-color: white;
+    /* border: 1px solid white; */
 }
 
 .controls {
