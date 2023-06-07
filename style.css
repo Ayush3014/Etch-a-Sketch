@@ -2,18 +2,24 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 body {
     font-family: consolas;
+    background-color: aqua;
+    text-align: center;
 }
 
 .sketch {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;       /* full height of viewport */
+    gap: 37px;
+    height: 500px;
+    margin-bottom: -70px;
+    /* height: 90vh;       full height of viewport */
 }
 
 .container {
@@ -21,10 +27,9 @@ body {
     display: grid;
     /* height: 500px;
     width: 500px; */
+    /* margin-top: 100px; */
     background-color: black;
     grid-template-columns: repeat(4, 1fr);
-    /* grid-template-rows: repeat(4, 1fr); */
-    
 }
 
 .item {
@@ -32,4 +37,26 @@ body {
     width: 50px;
     background-color: aliceblue;
     border: 2px solid crimson;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reset {
+    background-color: crimson;
+    color: white;
+    border: 2px solid white;
+    border-radius: 3px;
+    font-size: 18px;
+    padding: 3px;
+}
+
+.reset:hover {
+    cursor: pointer;
+    color: crimson;
+    border: 2px solid crimson;
+    background-color: white;
 }
