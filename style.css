@@ -3,11 +3,11 @@
     padding: 0;
     overflow: hidden;
     box-sizing: border-box;
+    font-family: consolas;
 }
 
 body {
-    font-family: consolas;
-    background-color: aqua;
+    background-color:lightgray;
     text-align: center;
 }
 
@@ -18,45 +18,117 @@ body {
     align-items: center;
     gap: 37px;
     height: 500px;
-    margin-bottom: -70px;
+    /* margin-bottom: -70px; */
     /* height: 90vh;       full height of viewport */
 }
 
+.heading {
+    text-decoration: none;
+}
+
+.heading h1{
+    font-size: 50px;
+    color: #3f1bf78c;
+    text-decoration: underline;
+    text-decoration-color: #3f1bf78c;
+}
+
+.heading:hover h1{
+    font-size: 75px;
+    color: darkblue;
+    text-decoration-color: darkblue;
+}
+
 .container {
-    /* flex: 1; */
-    display: grid;
-    /* height: 500px;
-    width: 500px; */
-    /* margin-top: 100px; */
+    /* display: grid; */
+    height: 400px;
     background-color: black;
-    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-columns: repeat(4, 1fr); */
 }
 
 .item {
-    height: 50px;
-    width: 50px;
     background-color: white;
-    /* border: 1px solid white; */
 }
 
 .controls {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 35px;
+    margin-top: 35px;
 }
 
 .reset {
     background-color: crimson;
     color: white;
     border: 2px solid white;
-    border-radius: 3px;
+    border-radius: 5px;
     font-size: 18px;
     padding: 3px;
 }
 
 .reset:hover {
     cursor: pointer;
-    color: crimson;
-    border: 2px solid crimson;
-    background-color: white;
+    text-decoration: underline;
+    font-size: 25px;
+    font: bold;
+}
+
+#dropdown {
+    font-size: 18px;    
+    color: white;    
+    background-color: crimson;    
+    border: 2px white solid;    
+    border-radius: 5px;    
+    margin-left: -21px;
+    margin-right: -5px;
+    padding: 2px;
+}
+
+#dropdown:hover {
+    cursor: pointer;
+    font-size: 25px;
+    font: bold;
+    text-decoration: underline;
+}
+
+.colors label {
+    font-size: 20px;    
+}
+
+#colorPicker {
+    cursor: pointer;
+    width: 24px;
+    height: 22px;
+}
+
+#colorPicker:hover {
+    width: 35px;
+    height: 32px;
+}
+
+.input {
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
+
+.input label {
+    font-size: 21px;
+}
+
+#gridNumber {
+    font-size: 18px;    
+    color: white;    
+    background-color: crimson;    
+    border: 2px white solid;    
+    border-radius: 5px;    
+    width: 75px;
+}
+
+#gridNumber:hover {
+    cursor: pointer;
+    font-size: 25px;
+    font: bold;
+    text-decoration: underline;
+    width: 95px;
 }

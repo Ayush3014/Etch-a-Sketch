@@ -1,53 +1,35 @@
-<!--
-rgb selector
-grid size selector instead of a prompt
- -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Etch-a-Sketch</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="sketch">
-    <h1>Etch-a-Sketch</h1>
-    <div class="container">
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-    </div>        
-</div>
-
-<div class="controls">
-    <button class="reset">Reset</button>
-    <select name="dropdown" id="dropdown">
-        <option value="option1" id="black">Black</option>
-        <option value="option2" id="random">Random</option> 
-    </select>
-
-    <div class="colors">
-        <input type="color" id="colorPicker">
+    <a href="https://github.com/Ayush3014" target="_blank"  class="heading"><h1>Etch-a-Sketch</h1></a>
+    <div class="controls">
+        <button class="reset">Reset</button>
+        <select name="dropdown" id="dropdown">
+            <option value="option1" id="black">Black</option>
+            <option value="option2" id="random">Random</option> 
+        </select>
+        <div class="colors">
+            <label for="colorPicker">Color Selector:</label>
+            <input type="color" id="colorPicker">
+        </div>
     </div>
     
-</div>
-    
+    <div class="input">
+        <label for="gridCount">Enter the grid size:</label>
+        <select name="gridCount" id="gridNumber">
+            <option value="option1" id="eight">8x8</option>
+            <option value="option2" id="sixteen">16x16</option>
+            <option value="option3" id="thirty-two">32x32</option>
+            <option value="option4" id="sixty-four">64x64</option>
+        </select>
+    </div>
 </body>
 <script src="script.js"></script>
 </html>
